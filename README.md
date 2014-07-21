@@ -123,6 +123,8 @@ $ curl -X DELETE http://optica.example.com/i-36428351
 
 You'll need a copy of zookeeper running locally, and it should have the correct path for optica:
 
+*Install java on mac first on http://support.apple.com/kb/DL1572*
+
 ```bash
 $ zkServer start
 $ zkCli
@@ -138,6 +140,13 @@ The example config is set up to talk to your local zookeeper:
 $ cd optica
 $ cp config.json.example config.json
 ```
+For the rabbitmq:
+
+```
+$ brew install rabbitmq(mac)
+$ rabbitmq-server(or starting at login)
+```
+
 
 Edit the default config and add your EC2 credentials.
 
